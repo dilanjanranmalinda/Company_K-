@@ -9,10 +9,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-/**
- *
- * @author Rukshana
- */
+
 public class DatabaseConnection {
     
     public static Connection connectToDatabase(String url, String username, String password) 

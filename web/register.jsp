@@ -65,10 +65,10 @@
                         </div>
 
                         <button type="submit" class="btn btn-primary">Register</button>
-                        <button type="button" class="btn btn-outline-dark">Reset</button>
+                        <button type="button" class="btn btn-dark">Reset</button>
 
                         <p><center>Already have an account? <a href = "login.jsp">Login</a></center></p>
-
+                    
                       </form>
 
                 </div>

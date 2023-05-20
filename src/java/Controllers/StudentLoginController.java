@@ -18,8 +18,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 
-@WebServlet(name = "LoginController", urlPatterns = {"/LoginController"})
-public class LoginController extends HttpServlet {
+@WebServlet(name = "StudentLoginController", urlPatterns = {"/StudentLoginController"})
+public class StudentLoginController extends HttpServlet {
 
     Connection con;
     PreparedStatement pst;
@@ -50,16 +50,16 @@ public class LoginController extends HttpServlet {
                 ResultSet rs = pst.executeQuery();
                 if(rs.next()){
                     HttpSession session = request.getSession();
-                    session.setAttribute("UN", email);
+                    session.setAttribute("UA", email);
                     request.setAttribute("Message", "Hello " + email);
-                    response.sendRedirect("admin.jsp");
+                    response.sendRedirect("student.jsp");
                 }else{
                     
                    request.setAttribute("Message", "Hello " + email);
                    request.setAttribute("Message", "Login Failed. Please check your username and password");
-                   request.getRequestDispatcher("index.jsp").forward(request, response);
+                   request.getRequestDispatcher("studentLogin.jsp").forward(request, response);
                    
-                   response.sendRedirect("index.jsp");
+                   response.sendRedirect("student.jsp");
                 }
              
             } catch (SQLException ex) {

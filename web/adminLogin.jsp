@@ -58,10 +58,7 @@
                         </div>
 
                         <button type="submit" class="btn btn-primary">Login</button>
-                        <button type="button" class="btn btn-outline-dark">Reset</button>
-
-                        <p><center>Don't have an account? <a href = "register.jsp">Sign up</a></center></p>
-
+                       
                       </form>
 
                 </div>
