@@ -1,6 +1,6 @@
 <%@ page contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
-<html>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Student Dashboard</title>
@@ -11,6 +11,45 @@
     <!-- Link jquery and Javascript -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    
+    <style>
+        /* Add custom styles here */
+        body {
+            background-image: url("images/2.jpg");
+            background-size: cover;
+            background-position: center;
+       
+        }
+        
+        
+        .card-header {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+        
+        .card-body {
+            padding: 20px;
+        }
+        
+        .card-title {
+            color: #000000;
+        }
+        
+        .form-label {
+            font-weight: bold;
+        }
+        
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+    </style>
+    
 </head>
 
 <body>
@@ -101,11 +140,7 @@
     </div>
 </body>
 
-<%
-        if(session.getAttribute("UA")== null){
-            response.sendRedirect("student.jsp");
-        }
-     %>
+
      
     </head>
-</html>
+

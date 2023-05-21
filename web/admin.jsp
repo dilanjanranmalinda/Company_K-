@@ -18,101 +18,156 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     
-    
+     <style>
+        /* Add custom styles here */
+        body {
+            background-image: url("images/3.jpg");
+            background-size: cover;
+            background-position: center;
+       
+        }
+        
+        .container {
+            margin-top: 80px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        .card-header {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+        
+        .card-body {
+            padding: 20px;
+        }
+        
+        .card-title {
+            color: #000000;
+        }
+        
+        .form-label {
+            font-weight: bold;
+        }
+        
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+    </style>
 </head>
 
 <body>
+ 
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">ABC University K Admin Panel</a>
         <!-- Add any additional navigation links if needed -->
     </nav>
     
- 
-    
-    <div class="container" style="margin-top:80px;background-size:cover;background-position:center;padding-left:400px;padding-top:50px;padding-right:400px;padding-bottom:20px">
-       
+    <div class="container">
         <div class="row">
-            
-            <div class="card text-dark mb-3" style="background-color:rgba(0, 191, 255, 0.2)">
-
+            <div class="card text-dark mb-3">
                 <div class="card-header">
-                    <center><b><h1> Welcome to Admin Panel</h1></b></center>
+                    <center><h1>Welcome to Admin Panel</h1></center>
                 </div>
-
                 <div class="card-body">
-     
-
-        <!-- Add User -->
-        <h2>Add User</h2>
-        <form action="AddUser" method="post">
-            <!-- Add user form fields -->
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit" class="btn btn-primary">Add User</button>
-        </form>
-
-        <!-- Remove User -->
-        <h2>Remove User</h2>
-        <form action="RemoveUser" method="post">
-            <!-- Remove user form fields -->
-            <input type="text" name="userId" placeholder="User ID" required>
-            <button type="submit" class="btn btn-primary">Remove User</button>
-        </form>
-
-        <!-- Edit User -->
-        <h2>Edit User</h2>
-        <form action="EditUser" method="post">
-            <!-- Edit user form fields -->
-            <input type="text" name="userId" placeholder="User ID" required>
-            <input type="text" name="username" placeholder="New Username" required>
-            <input type="password" name="password" placeholder="New Password" required>
-            <button type="submit" class="btn btn-primary">Edit User</button>
-        </form>
-        
-                </div>
-                </div>
-            
-                <div class="card text-dark mb-3" style="background-color:rgba(0, 191, 255, 0.2)">
+                    <!-- Add User -->
+                    <h2>Add User</h2>
                     
-<div class="card-body"style>
-    
-        <!-- Add Degree -->
-        <h2>Add Degree</h2>
-        <form action="AddDegree" method="post">
-            <!-- Add degree form fields -->
-            <input type="text" name="degreeName" placeholder="Degree Name" required>
-          
-            <button type="submit" class="btn btn-primary">Add Degree</button>
-        </form>
-
-        <!-- Remove Degree -->
-        <h2>Remove Degree</h2>
-        <form action="RemoveDegree" method="post">
-            <!-- Remove degree form fields -->
-            <input type="text" name="degreeId" placeholder="Degree ID" required>
-            <button type="submit"class="btn btn-primary">Remove Degree</button>
-        </form>
-
-        <!-- Edit Degree -->
-        <h2>Edit Degree</h2>
-        <form action="EditDegree" method="post">
-            <!-- Edit degree form fields -->
-            <input type="text" name="degreeId" placeholder="Degree ID" required>
-            <input type="text" name="degreeName" placeholder="New Degree Name" required>
-            <button type="submit" class="btn btn-primary">Edit Degree</button>
-        </form>
-        </div>
+                        <a href = "register.jsp" class="btn btn-primary">CLICK Register</a>
+                
+                    </form>
+                    
+                    <!-- Remove User -->
+                    <h2>Remove User</h2>
+                    <form action="RemoveUser" method="post">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="userId" placeholder="User ID" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Remove User</button>
+                    </form>
+                    
+                    <!-- Edit User -->
+                    <h2>Edit User</h2>
+                    <form action="EditUser" method="post">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="userId" placeholder="User ID" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="username" placeholder="New Username" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" name="password" placeholder="New Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Edit User</button>
+                    </form>
                 </div>
             </div>
+            
+            <div class="card text-dark mb-3">
+                <div class="card-body">
+                    <!-- Add Degree and Subjects -->
+                    <h2>Add Degree and Subjects</h2>
+                    <form action="AddDegreeSubject" method="post">
+                        <input type="hidden" name="degreeAction" value="addDegree">
+                        <div class="mb-3">
+                            <label for="degreeName" class="form-label">Degree Name</label>
+                            <input type="text" class="form-control" id="degreeName" name="degreeName" placeholder="Enter Degree Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="degreeId" class="form-label">Degree ID</label>
+                            <input type="text" class="form-control" id="degreeId" name="degreeId" placeholder="Enter Degree ID" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subjects" class="form-label">Subjects</label>
+                            <textarea class="form-control" id="subjects" name="subjects" placeholder="Enter Subjects (comma-separated)" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Degree and Subjects</button>
+                    </form>
+                    
+                    <!-- Remove Degree -->
+                    <h2>Remove Degree</h2>
+                    <form action="RemoveDegree" method="post">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="degreeId" placeholder="Degree ID" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Remove Degree</button>
+                    </form>
+                    
+                    <!-- Edit Degree -->
+                    <h2>Edit Degree</h2>
+                    <form action="AdminServlet" method="post">
+                        <input type="hidden" name="degreeAction" value="editDegree">
+                        <div class="mb-3">
+                            <label for="oldDegreeProgram" class="form-label">Select Old Degree</label>
+                            <select name="oldDegreeProgram" class="form-select">
+                                <option value="degree1">Btech Degree</option>
+                                <option value="degree2">BSC Degree</option>
+                                <option value="degree3">BBM Degree</option>
+                                <option value="degree4">BBA Degree</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newDegreeName" class="form-label">New Degree Name</label>
+                            <input type="text" class="form-control" id="newDegreeName" name="newDegreeName" placeholder="Enter New Degree Name" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Edit Degree</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     
-   <a href="logout.jsp">logout</a>
+    <a href="logout.jsp">Logout</a>
 
 </body>
-<%
-        if(session.getAttribute("UN")== null){
-            response.sendRedirect("admin.jsp");
-        }
-     %>
+
 </html>
 

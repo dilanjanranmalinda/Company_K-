@@ -21,10 +21,7 @@ public class DatabaseConnection {
         } catch (ClassNotFoundException e){
             System.out.println("could not find MySQL JDBC driver");
             e.printStackTrace();
-        } catch (SQLException e) {
-            System.out.println("Could not connect database");
-            e.printStackTrace();
-        }
+        } 
         return connection;
     }
 }

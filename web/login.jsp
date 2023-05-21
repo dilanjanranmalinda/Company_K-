@@ -4,9 +4,9 @@
 
 <html lang="en">
 
-
+    <head>
  
-    <title>Login</title>
+    <title> Login </title>
 
     <!-- Link bootstrap ACS -->
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
@@ -15,7 +15,44 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
-
+    </head>
+     <style>
+        /* Add custom styles here */
+        body {
+            background-image: url("images/2.jpg");
+            background-size: cover;
+            background-position: center;
+       
+        }
+        
+        
+        .card-header {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+        
+        .card-body {
+            padding: 20px;
+        }
+        
+        .card-title {
+            color: #000000;
+        }
+        
+        .form-label {
+            font-weight: bold;
+        }
+        
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+    </style>
 
 <body>
     
@@ -35,12 +72,12 @@
             <div class="card text-dark mb-3" style="background-color:rgba(0, 191, 255, 0.2)">
 
                 <div class="card-header">
-                    <center><b><h4>Login</h4></b></center>
+                    <center><b><h4>Login </h4></b></center>
                 </div>
 
                 <div class="card-body">
 
-                    <form method="POST" action="LoginController">
+                    <form method="POST" action="usercontroller">
 
                         <div class="mb-3">
                           <label for="exampleInputEmail1" class="form-label">Username</label>
@@ -57,8 +94,12 @@
                           <label class="form-check-label" for="exampleCheck1">Remember Username</label>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Login</button>
-                       
+                        <button type="submit" class="btn btn-primary">Login </button>
+                        
+                        <button type="button" class="btn btn-outline-dark">Reset</button>
+
+                        <p><center>Don't have an account? <a href = "register.jsp" class="btn btn-primary">Sign up</a></center></p>
+
                       </form>
 
                 </div>

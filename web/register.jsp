@@ -1,5 +1,4 @@
 
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
@@ -17,6 +16,7 @@
     <script src="js/bootstrap.min.js"></script>
 
 </head>
+
 
 <body>
 
@@ -50,6 +50,14 @@
                           </div>
 
                         <div class="mb-3">
+                            <label for="exampleInputdegree" class="form-label">Your Degree Program</label>
+                            <input type="degree" class="form-control" id="exampleInputDegree" name="degree" aria-describedby="degree" placeholder="Enter Your Degree" required>
+                          </div>
+    
+                            
+                            
+                            
+                        <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Enter Your Password" required>
                         </div>
@@ -67,7 +75,7 @@
                         <button type="submit" class="btn btn-primary">Register</button>
                         <button type="button" class="btn btn-dark">Reset</button>
 
-                        <p><center>Already have an account? <a href = "login.jsp">Login</a></center></p>
+                        <p><center font = "bold">Already have an account? <a href = "login.jsp">Login</a></center></p>
                     
                       </form>
 
