@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Admin Page</title>
+    <title> Admin Page </title>
 
     <!-- Link bootstrap css -->
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
@@ -68,7 +68,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">ABC University K Admin Panel</a>
-        <!-- Add any additional navigation links if needed -->
+ 
+         <a href="adminRegister.jsp"class="btn btn-warming"> Admin register </a>
     </nav>
     
     <div class="container">
@@ -77,22 +78,19 @@
                 <div class="card-header">
                     <center><h1>Welcome to Admin Panel</h1></center>
                 </div>
+                
+                
+                
                 <div class="card-body">
                     <!-- Add User -->
                     <h2>Add User</h2>
                     
-                        <a href = "register.jsp" class="btn btn-primary">CLICK Register</a>
-                
-                    </form>
+                        <a href = "register.jsp" class="btn btn-primary">Click Student Register</a>
+           
                     
-                    <!-- Remove User -->
-                    <h2>Remove User</h2>
-                    <form action="RemoveUser" method="post">
-                        <div class="mb-3">
-                            <input type="text" class="form-control" name="userId" placeholder="User ID" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Remove User</button>
-                    </form>
+                   
+                    <h2>Remove User and  Edit </h2>
+                    <a href = "function.jsp" class="btn btn-primary">Click Remove Student and  Edit</a>
                     
                     <!-- Edit User -->
                     <h2>Edit User</h2>

@@ -5,7 +5,6 @@
  */
 package Controllers;
 
-
 import Beans.DatabaseConnection;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -21,11 +20,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ *
+ * @author Alen morgen
+ */
+@WebServlet(name = "AdminRegisterController", urlPatterns = {"/AdminRegisterController"})
+public class AdminRegisterController extends HttpServlet {
 
-@WebServlet(name = "RegisterController", urlPatterns = {"/RegisterController"})
-public class RegisterController extends HttpServlet {
-
-        Connection con;
+       Connection con;
         PreparedStatement pst;
         ResultSet rs;
 
@@ -37,7 +39,7 @@ public class RegisterController extends HttpServlet {
             String nic = request.getParameter("nic");
             String email = request.getParameter("email");
             String password = request.getParameter("password");
-            String degree = request.getParameter("degree");
+           
             
             PrintWriter out = response.getWriter();
            
@@ -49,21 +51,23 @@ public class RegisterController extends HttpServlet {
             Connection con;
             try {
                 con = DatabaseConnection.connectToDatabase("jdbc:mysql://localhost/abc_university_k", "root", "");                
-                pst = con.prepareStatement("INSERT INTO users(name, nic, email, password, degree) VALUES(?,?,?,?,?)");
+                pst = con.prepareStatement("INSERT INTO admin(name, nic, email, password) VALUES(?,?,?,?)");
             
                 pst.setString(1, name);
                 pst.setString(2, nic);
                 pst.setString(3, email);
                 pst.setString(4, password);
-                pst.setString(5, degree);
                 pst.executeUpdate();
              
             } catch (SQLException ex) {
-                Logger.getLogger(RegisterController.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(AdminRegisterController.class.getName()).log(Level.SEVERE, null, ex);
+
                 out.println("<h1>Something Went Wrong</h1>");
             }
-            out.println("<h1>Your Registration is Success !!!</h1>");
-            out.println("<h1>Please Login...</h1>");
+         String message = "Your registration is successful. Please log in.";
+request.setAttribute("message", message);
+request.getRequestDispatcher("login.jsp").forward(request, response);
+
             //String redirectURL = "login.jsp";
             //response.sendRedirect(redirectURL);
             
@@ -73,9 +77,5 @@ public class RegisterController extends HttpServlet {
     }
 
 
+
 }
-
-    
-
-
-

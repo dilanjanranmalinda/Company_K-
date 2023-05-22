@@ -69,7 +69,7 @@ public class usercontroller extends HttpServlet {
        request.getRequestDispatcher("student.jsp").forward(request, response);
            }
        }else{
-       out.print("gg");
+       out.print("s");
        }
        
        } catch (SQLException ex) {

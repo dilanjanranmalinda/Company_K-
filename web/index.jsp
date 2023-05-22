@@ -4,8 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>JSP Page</title>
-
-    <!-- Link bootstrap css -->
+    
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
 
     <!-- Link jquery and Javascript -->
@@ -13,8 +12,46 @@
     <script src="js/bootstrap.min.js"></script>
 </head>
 
+
+<style>
+        /* Add custom styles here */
+        body {
+            background-image: url("images/3.jpg");
+            background-size: cover;
+            background-position: center;
+       
+        }
+        
+        
+        .card-header {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+        
+        .card-body {
+            padding: 20px;
+        }
+        
+        .card-title {
+            color: #000000;
+        }
+        
+        .form-label {
+            font-weight: bold;
+        }
+        
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+    </style>
+
 <body>
-   <body>
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container px-lg-5">
@@ -23,8 +60,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.jsp">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.jsp">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="login.jsp">Login</a></li>
                    
                     
@@ -32,7 +69,7 @@
             </div>
         </div>
     </nav>
-    <!-- Header-->
+   
     <header class="py-5">
         <div class="container px-lg-5">
             <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
@@ -111,7 +148,7 @@
     </section>
     <!-- Footer-->
     <footer class="py-5 bg-dark">
-        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Dela Dolly Nikka 2023</p></div>
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
