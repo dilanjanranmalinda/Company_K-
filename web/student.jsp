@@ -4,13 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Dashboard</title>
+  <title>Student</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  
   <style>
     .carousel-item {
       height: 500px;
@@ -23,93 +27,44 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a class="navbar-brand" href="#">University Name</a>
+      <a class="navbar-brand" href="#">ABC University K</a>
       <div class="navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="btn btn-primary" href="#">Button 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-secondary" href="#">Button 2</a>
+            <a class="btn btn-secondary" href="gpacal.jsp">calculate Your GPA </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Carousel wrapper -->
-  <div id="carouselBasicExample" class="carousel slide carousel-fade" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#carouselBasicExample" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselBasicExample" data-slide-to="1"></li>
-      <li data-target="#carouselBasicExample" data-slide-to="2"></li>
-    </ol>
+ 
+     
 
-    <!-- Inner -->
-    <div class="carousel-inner">
-      <!-- Single item -->
-      <div class="carousel-item active">
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp" class="d-block w-100"
-          alt="Slide 1">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div>
-      </div>
-
-              <div id="ImageCarouselCSS" class="carousel slide" data-ride="carousel">
-
-
-  <ol class="carousel-indicators">
-
-
-    <li data-target="#ImageCarouselCSS" data-slide-to="0" class="active"></li>
-
-
-    <li data-target="#ImageCarouselCSS" data-slide-to="1"></li>
-
-
-    <li data-target="#ImageCarouselCSS" data-slide-to="2"></li>
-
-
-  </ol>
-
-
+         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-
-
     <div class="carousel-item active">
-
-
-      <img src="https://source.unsplash.com/fk4tiMlDFF0/900x600/" class="d-block w-100" alt="tiniest puppy">
-
-
+      <img class="d-block w-100" src="images/7.jpg" alt="First slide">
     </div>
-
-
     <div class="carousel-item">
-
-
-      <img src="https://source.unsplash.com/TzjMd7i5WQI/900x600/" class="d-block w-100" alt="tiny puppy">
-
-
+      <img class="d-block w-100" src="images/6.jpg" alt="Second slide">
     </div>
-
-
     <div class="carousel-item">
-
-
-      <img src="https://source.unsplash.com/-Go4DH2pZbc/900x600/" class="d-block w-100" alt="least tiny but still tiny puppy">
-
-
+      <img class="d-block w-100" src="images/29.jpg" alt="Third slide">
     </div>
-
-
   </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>       
 
 
-</div>
+ 
 
   <!-- Degrees and Subjects -->
   <div class="container mt-5">
@@ -117,24 +72,54 @@
       <div class="col-lg-4 mb-4">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Degree 1</h5>
-            <p class="card-text">Description of Degree 1.</p>
+            <h5 class="card-title">BTech</h5>
+            <p class="card-text">Bachelor of Technology (BTech) is a professional undergraduate engineering degree program awarded to candidates after they complete four years of study in the field. Engineering is one of the most popular courses in India and there are many institutes that offer the course to aspiring students.</p>
           </div>
         </div>
       </div>
       <div class="col-lg-4 mb-4">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Degree 2</h5>
-            <p class="card-text">Description of Degree 2.</p>
+            <h5 class="card-title">BSc</h5>
+            <p class="card-text">A Bachelor of Science degree (or BSc for short) is a degree awarded at universities around the world for completion of an undergraduate-level study in a science- or technology-related field. Enrolling in an BSc degree program translates to making a significant investment in one's professional career.</p>
           </div>
         </div>
       </div>
       <div class="col-lg-4 mb-4">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Degree 3</h5>
-            <p class="card-text">Description of Degree 3.</p>
+            <h5 class="card-title">BBM</h5>
+            <p class="card-text">BBM is a 3-year Degree Course. At some institutions, it is offered for a duration of four years. The course is designed around subjects such as entrepreneurship, marketing, economics, finance, management information systems, etc</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   <!-- Degrees and Subjects -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">B.A</h5>
+            <p class="card-text">The Bachelor of Arts (B.A.) is the most common undergraduate degree offered by universities and colleges worldwide. B.A. degrees are mainly awarded to students following a program in the Liberal Arts (e.g. Humanities, Social Sciences).</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Master</h5>
+            <p class="card-text">A master's degree is a postgraduate academic degree awarded by universities or colleges upon completion of a course of study demonstrating mastery or a high-order overview of a specific field of study or area of professional practice.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">PhD</h5>
+            <p class="card-text">A PhD (Doctor of Philosophy) is a doctoral research degree and the highest level of academic qualification you can achieve. A PhD degree normally takes between three and four years of full-time work to complete. You'll research and write a thesis offering an original contribution to your subject.</p>
           </div>
         </div>
       </div>
@@ -144,7 +129,7 @@
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
-  <button><a href="gpacal.jsp" class="btn btn-danger">GPA calculator</a></button>
+
 </body>
 
 </html>
